@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
   // Display character details in the detailed info section
- 
+  function displayCharacterDetails(character) {
     currentCharacter = character;
     detailedInfo.innerHTML = `
       <h2>${character.name}</h2>
