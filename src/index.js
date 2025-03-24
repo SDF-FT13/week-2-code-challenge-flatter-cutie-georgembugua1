@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const additionalVotes = parseInt(dynamicVotesInput.value) || 0;
         currentCharacter.votes += additionalVotes;
         document.getElementById("vote-count").textContent = currentCharacter.votes;
-        dynamicVotesInput.value = ""; // Clear the input field
+         // Clear the input field
       }
     });
 
