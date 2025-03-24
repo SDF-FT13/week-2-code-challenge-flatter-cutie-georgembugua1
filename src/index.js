@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Add event listener for the votes form
     const dynamicVotesForm = detailedInfo.querySelector("#votes-form");
     const dynamicVotesInput = detailedInfo.querySelector("#votes");
-    
+    dynamicVotesForm.addEventListener("submit", (event) => {
       event.preventDefault();
       if (currentCharacter) {
         const additionalVotes = parseInt(dynamicVotesInput.value) || 0;
