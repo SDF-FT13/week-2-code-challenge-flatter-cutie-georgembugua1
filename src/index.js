@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const baseUrl = "//localhost:3000/characters";
-  const characterBar = document.getElementById("character-bar");
+  
   const detailedInfo = document.getElementById("detailed-info");
   const votesForm = document.getElementById("votes-form");
   const votesInput = document.getElementById("votes");
