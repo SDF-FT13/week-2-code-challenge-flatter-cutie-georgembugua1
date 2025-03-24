@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const characterBar = document.getElementById("character-bar");
   const detailedInfo = document.getElementById("detailed-info");
   const votesForm = document.getElementById("votes-form");
-
-  const resetButton = document.getElementById("reset-btn");
+  const votesInput = document.getElementById("votes");
+  
 
   let currentCharacter = null;
 
