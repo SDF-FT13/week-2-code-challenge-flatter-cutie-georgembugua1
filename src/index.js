@@ -50,8 +50,8 @@ document.addEventListener("DOMContentLoaded", () => {
     // Add event listener for the reset button
     const dynamicResetButton = detailedInfo.querySelector("#reset-btn");
     dynamicResetButton.addEventListener("click", () => {
-      
-        currentCharacter.votes = 0;
+        if (currentCharacter) {
+        
         document.getElementById("vote-count").textContent = currentCharacter.votes;
       }
     });
