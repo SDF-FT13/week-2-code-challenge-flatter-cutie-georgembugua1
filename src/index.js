@@ -4,9 +4,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const detailedInfo = document.getElementById("detailed-info");
   const votesForm = document.getElementById("votes-form");
   const votesInput = document.getElementById("votes");
-  
+  const resetButton = document.getElementById("reset-btn");
 
-  let currentCharacter = null;
+
 
   // Fetch and display all characters in the character bar
   fetch(baseUrl)
