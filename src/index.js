@@ -43,12 +43,12 @@ document.addEventListener("DOMContentLoaded", () => {
         const additionalVotes = parseInt(dynamicVotesInput.value) || 0;
         currentCharacter.votes += additionalVotes;
         document.getElementById("vote-count").textContent = currentCharacter.votes;
-         // Clear the input field
+        dynamicVotesInput.value = ""; // Clear the input field
       }
     });
 
     // Add event listener for the reset button
-    const dynamicResetButton = detailedInfo.querySelector("#reset-btn");
+    
     dynamicResetButton.addEventListener("click", () => {
       if (currentCharacter) {
         currentCharacter.votes = 0;
