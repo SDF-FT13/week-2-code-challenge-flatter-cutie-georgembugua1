@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const votesInput = document.getElementById("votes");
   const resetButton = document.getElementById("reset-btn");
 
-
+  let currentCharacter = null;
 
   // Fetch and display all characters in the character bar
   fetch(baseUrl)
