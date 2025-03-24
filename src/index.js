@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let currentCharacter = null;
 
   // Fetch and display all characters in the character bar
-  fetch(baseUrl)
+  
     .then((response) => response.json())
     .then((characters) => {
       characters.forEach((character) => {
